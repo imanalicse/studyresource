@@ -4,5 +4,5 @@ ID int not null primary key,
 Gender nvarchar(50) not null
 );
 
-Alter Table tblPerson add constraint tblPerson_GenderID_FK
-Foreign Key (GenderId) references tblGender (ID)
+Alter Table tblPerson add constraint tblPerson_GenderId_FK
+Foreign Key (GenderId) references tblGender(ID)
