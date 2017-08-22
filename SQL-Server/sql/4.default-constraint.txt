@@ -1,0 +1,13 @@
+use Sample
+Go
+Select * from tblGender
+Select * from tblPerson
+
+Insert into tblPerson (ID, Name, Email, GenderId) Values(4, 'Johone', 'j@r.com', null)
+
+Alter table tblPerson
+Drop constraint DF_tblPerson_GenderId
+
+Alter table tblPerson
+Add constraint DF_tblPerson_GenderId
+Default 3 for GenderId
